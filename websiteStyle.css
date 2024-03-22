@@ -1,0 +1,37 @@
+.button {
+	display: block;
+    padding: 50px 32px;
+    font-size: 20px;
+	text-align: center;
+	cursor: pointer;
+	border: 2px solid #04AA6D;
+	background-color: white;
+    transition: transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #04AA6D;
+	color: white;
+}
+
+.button:active {
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(10px);
+}
+
+.error {color: #FF0000}
+	body{
+			background-color: #33fff4;
+		}
+		h1{
+			font-family: 'Sedgwick Ave', cursive;
+		}
+		footer{
+			text-align:center;
+			background-color: #336699;
+			color: white;
+		}
+.nav-link {
+	color: blue;
+}
