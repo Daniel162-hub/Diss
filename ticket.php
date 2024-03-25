@@ -25,10 +25,7 @@
 		<div class='container'>
 			<div class='row'>
 				<div class='col-6'>
-						<a id="clickButton" class="button" href="newTicket.php">New ticket</a>
-				</div>
-				<div class='col-6'>
-					<a id="clickButton2" class="button" href="newTicket.php">Your tickets</a>				
+						<a id="clickButton" class="button" href="newTicket.php">Create ticket</a>
 				</div>
 			</div>
 		</div>

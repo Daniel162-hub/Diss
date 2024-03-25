@@ -15,7 +15,7 @@
 		<div class="collapse navbar-collapse" id="collapsibleNavbar">
 			<ul class="navbar-nav">
 				<li class="nav-item">
-					<a class="nav-link" href="home.php">Home</a>
+					<a class="nav-link" href="ticket.php">Back</a>
 				</li>
 			</ul>
 		</div>
@@ -69,6 +69,7 @@ function test_input($data) {
 }
 ?>
 
+<a href='ticket.php' class'previous round'> &#8249;</a>
 <h2>Submit new ticket</h2>
 <p><h4><span class="error">* required field</span><h4></p>
 

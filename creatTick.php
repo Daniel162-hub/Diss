@@ -26,7 +26,7 @@
     <title>Database Connection Example - Simple Address Book - PHP Output (UPDATE)</title>
   </head>
   <body>
-    <h2>Ticket submitted</h2>
+    <h2>Ticket succesfully added</h2>
     <p><a href="ticket.php">Return to ticket page</a></p>
   </body>
 </html>
