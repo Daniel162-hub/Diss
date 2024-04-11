@@ -23,7 +23,7 @@
 	<div class='container'>
 
 <?php
-$name = $email = $requestType = $request = "";
+$name = $email = $email2 = $requestType = $request = "";
 $nameErr = $emailErr = $requestTypeErr = $requestErr = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -40,6 +40,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $emailErr = "Email is required";
   } else {
     $email = test_input($_POST["email"]);
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      $emailErr = "Invalid email format"; 
+    }
+  }
+
+  if (empty($_POST["email"])) {
+    $emailErr = "Email is required";
+  } else {
+    $email2 = test_input($_POST["email"]);
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
       $emailErr = "Invalid email format"; 
     }
@@ -80,6 +89,10 @@ function test_input($data) {
   <br><br>
   <label for="email">Email:</label><br>
   <input type="text" name="email" value="<?php echo $email;?>">
+  <span class="error">* <?php echo $emailErr;?></span>
+  <br><br>
+  <label for="email2">Email:</label><br>
+  <input type="text" name="email2" value="<?php echo $email2;?>">
   <span class="error">* <?php echo $emailErr;?></span>
   <br><br>
   <label for="requestType">Request type:</label><br>
