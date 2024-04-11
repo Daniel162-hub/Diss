@@ -58,9 +58,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $requestType = "";
   } else {
     $requestType = test_input($_POST["requestType"]);
-    if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$requestType)) {
-      $websiteErr = "Invalid URL"; 
-    }
   }
 
   if (empty($_POST["request"])) {
