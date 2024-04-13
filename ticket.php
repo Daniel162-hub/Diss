@@ -24,9 +24,7 @@
 	<p>
 		<div class='container'>
 			<div class='row'>
-				<div class='col-6'>
 						<a id="clickButton" class="button" href="newTicket.php">Create ticket</a>
-				</div>
 			</div>
 		</div>
 	</p>

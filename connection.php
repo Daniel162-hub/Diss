@@ -1,13 +1,8 @@
 <?php
 
-  // IMPORTANT: Change the connection parameters to reflect our MySQL setup...
-  //            Server name: dalek.scam.keele.ac.uk
-  //            Username: your username (eg. v0x00)
-  //            Password: same as your username (NOT your usual login password)
-
-  $servername = "localhost";
-  $username = "root";
-  $password = "daniel";
+  $servername = "katara.scam.keele.ac.uk";
+  $username = "x5g62";
+  $password = "x5g62x5g62";
   $dbname = "grandma's computing";
 
   // Create connection
