@@ -75,9 +75,9 @@ function test_input($data) {
 }
 ?>
 
-<a href='ticket.php' class'previous round'> &#8249;</a>
-<h2>Submit new ticket</h2>
-<p><h4><span class="error">* required field</span><h4></p>
+<br><a id="clickButton" class="round" href="ticket.php"><b>Go Back</b></a><br><br>
+<h2><b>Submit New Ticket</b></h2>
+<p><h4><span class="error">* Required field</span><h4></p>
 
 <form method="post" action="creatTick.php">
   <label for="name">Name:</label><br>
@@ -88,7 +88,7 @@ function test_input($data) {
   <input type="text" name="email" value="<?php echo $email;?>">
   <span class="error">* <?php echo $emailErr;?></span>
   <br><br>
-  <label for="email2">Email:</label><br>
+  <label for="email2">Re-enter email:</label><br>
   <input type="text" name="email2" value="<?php echo $email2;?>">
   <span class="error">* <?php echo $emailErr;?></span>
   <br><br>
@@ -97,10 +97,10 @@ function test_input($data) {
   <span class="error"><?php echo $requestTypeErr;?></span>
   <br><br>
   <label for="request">Request:</label><br>
-  <textarea name="request" rows="5" cols="40"><?php echo $request;?></textarea>
+  <textarea name="request" rows="2" cols="40"><?php echo $request;?></textarea>
   <span class="error"><?php echo $requestErr;?></span>
   <br><br>
-  <input type="submit" name="submit" value="Submit">  
+  <a id="clickbutton" class="submit" href="ticket.php"><b>Submit</b></a>  
 </form>
 </body>
 </html>
